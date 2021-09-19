@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F7EBD5;
+    color: #D4C4B4;
+}
+
+nav {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #6f6f6f;
+}
+
+nav h1 {
+    color: #7C6463;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+nav .onglets{
+    margin-top: 3px;
+    margin-left: 300px;
+}
+
+nav .onglets a{
+    text-decoration: none;
+    color: #000;
+    margin-right: 10px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background: url(img/cafe.jpg) no-repeat fixed;
+    background-size: cover;
+    opacity: 0.8;
+    height: 450px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    color: #FCFCE4;
+    margin-top: 10%;
+}
+
+header h4 {
+    margin-top: -20px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    color: #FCFCE4;
+    opacity: 1;
+}
+
+header button {
+    padding: 10px 80px 10px 80px;
+    background-color: #FCFCE4;
+    color: #7C6463;
+    border:none;
+    margin-bottom: 30px;
+    outline:none;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+    border-radius: 290486px;
+    transition: color .5s ease-in-out;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+header .button {
+    display: flex;
+}
+
+header button:hover {
+    background-color: #7C6463;
+    color: #FCFCE4;
+    transition: color .5s ease-in-out;
+}
+
+.coffee { 
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    opacity: 0.8;
+    background-color: white;
+    align-items: center;
+}
+
+.coffee .contain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coffee h1 {
+    color: #7C6463;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+.coffee .contain .categories img {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+    cursor: pointer;
+}
+
+.coffee .contain .categories:hover img {
+    opacity: 0.5;
+
+}
+
+.coffee .contain .categories {
+    position: relative;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.coffee .contain .categories button {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+    text-align: center;
+    background-color: #7C6463;
+    color: #FCFCE4;
+    border: 1px solid black;
+    outline:none;
+    cursor: pointer;
+    border-radius: 290486px;
+    transition: color .5s ease-in-out;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px 10px 10px 10px;
+}
+
+.coffee .contain .categories:hover button {
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+}
+
+.main {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .content h1 {
+    color: #7C6463;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin-left: 26.5%;
+}
+
+.main .content .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom:20px;
+}
+
+.main .content .card .left {
+   flex: 0 0 30%;
+   padding: 20px;
+   background-color: #7C6463;
+   color: #FCFCE4;
+   width: 400px;
+   height: 300p;
+   justify-content: center;
+   align-items: center;
+}
+
+.main .content .card .right img {
+    height:300px;
+    width: 400px;
+    margin-top: 5px;
+}
+
+footer {
+    margin-top: 40px;
+    border-top: 5px solid #6f6f6f;
+    background-color: #7C6463;
+    color: #fff;
+    padding: 30px 100px;
+}
+
+footer h1 {
+    font-family: 'Playfair Display', serif;
+    border-bottom: 1px solid white;
+    width: 20%;
+    padding-bottom: 5px;
+}
+
+footer .services {
+    margin-top: -10px;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+footer .services .service {
+    margin-right: 30px;
+}
+
+footer .services .service p {
+    max-width: 300px;
+}
+
+footer #contact {
+    color: rgb(181, 181, 181);
+}
+
+@media screen and (max-width:680px) {
+    nav .onglets {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    .main .card {
+        margin: 10px;
+    }
+
+    .main .content .card .right img{
+        height:200px;
+        width: 100%;
+        margin-top: -0px;
+    }
+
+    .main .content .card {
+        display: block;
+    }
+
+    footer {
+        padding: 30px;
+    }
+}
